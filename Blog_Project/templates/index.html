@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body style="background-image: url('/static/blog_pic6.jpg'); filter: blur(0px); background-size: cover; background-repeat: no-repeat;">
+
+  <div class="mb-3">
+    <br><br><br>
+    <h3 style="text-align: center;font-size: 25px;margin-left: 480px;"><b><b>Registration</b></b></h3>
+  
+    <form action="/register" method="post" style="width: 400px; margin: 0 auto;  padding: 5px;margin-left: 600px;">
+        <label for="username" style="text-align: left; font-size: 18px;"><b><b>Username:</b></b></label>
+        <input type="text" class="form-control" id="username" name="username" required style="background-color: white ; text-align: left;"><br>
+
+        <label for="email" style="text-align: left;font-size: 18px;"><b><b>Email:</b></b></label>
+        <input type="email" class="form-control" id="email" name="email" required style="background-color: white; text-align: left;"><br>
+
+        <label for="password" style="text-align: left;font-size: 18px;"><b><b>Password:</b></b></label>
+        <input type="password" class="form-control" id="password" name="password" required style="background-color: white; text-align: left;"><br>
+
+        <label for="confirm_password" style="text-align: left;font-size: 18px;"><b><b>Confirm Password:</b></b></label>
+        <input type="password" class="form-control" id="confirm_password" name="confirm_password" required style="background-color: white; text-align: left;"><br><br>
+
+        <input type="submit" value="Register" style="background-color: white; text-align: center;font-size: 16px;">
+    </form>
+
+  </div>
+</body>
+</html>
+
+
+{% endblock content %}

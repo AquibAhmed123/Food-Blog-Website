@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+{% block content %}
+<body style="background-image: url('/static/blog_pic6.jpg'); filter: blur(0px); background-size: cover; background-repeat: no-repeat;">
+  <br>
+<h1  style="text-align: center;font-size: 35px;"><b><b>Food Blogs</b></b></h1>
+<br>
+<table class="table table-striped-columns">
+  <thead>
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Blog Content</th>
+    </tr>
+</thead>
+
+    {% for user in userDetails %}
+    <tr>
+      <td>{{user[0]}}</td>
+      <td>{{user[1]}}</td>
+      <td>{{user[2]}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+{% endblock content %} 
